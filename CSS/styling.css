@@ -1,0 +1,207 @@
+header, section, div {
+	box-sizing: border-box;
+}
+body {
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+/* Styling for logo*/
+
+.logo img {
+	width: 80px;
+	height: 74px;
+}
+/* Styling for heading and flexcode*/
+
+.title {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.featured-work {
+	font-weight: lighter;
+}
+.header {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	margin: 3px;
+}
+/* Styling for title and subtitle*/
+
+.title {
+	font-weight: lighter;
+	text-align: end;
+	font-size: 36px;
+}
+.sub-title {
+	font-weight: lighter;
+	text-align: end;
+	font-size: 25px;
+}
+/* Adding a line before the content using CSS property hr*/
+
+hr {
+	height: .3px;
+	padding: 0;
+	border: 0;
+	border-top: 1.3px solid #7d97ad;
+	margin: 0 5px 0 5px;
+}
+/* For main area */
+
+main {
+	width: 100%;
+}
+/* Adding some margin before the content actually starts
+
+.content {
+	margin: 8px;
+}*/
+
+/*  html-image adding Style  */
+
+.html-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* All the projects will be under the projects para- Styling  */
+
+.projects_mainheading {
+	text-align: left;
+	letter-spacing: 5px;
+	position: relative;
+	top: 10px;
+	color: #a96;
+}
+/*For Future needs, styling all the projects separately so that if needed , we can stand out any particular project */
+
+/* Style First Image */
+
+.first-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Style Second Image */
+
+.second-image img {
+	/* center and size iamges */
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Style Third Image */
+
+.third-image img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Style Various Project names */
+
+.project_name {
+	font-family: "Times New Roman";
+	font-size: 1.0em;
+	letter-spacing: 4px;
+	text-align: center;
+	position: relative;
+	top: -5px;
+}
+/* Style various Project URL's */
+
+.project_url {
+	text-align: left;
+	font-size: 1em;
+	line-height: 0.5em;
+	position: relative;
+	top: -15px;
+}
+a:link, a:visited {
+	text-decoration: none;
+	color: black;
+}
+@media screen and (min-width: 406px) {
+	.logo img {
+		margin-left: 0;
+		width: 86px;
+	}
+	.title {
+		font-size: 1.4em;
+	}
+	.sub-title {
+		letter-spacing: 1px;
+	}
+}
+@media screen and (min-width: 544px) {
+	.logo img {
+		width: 96px;
+	}
+	.title {
+		letter-spacing: 0;
+	}
+	.sub-title {
+		letter-spacing: 0;
+	}
+	.projects_para {
+		text-align: left;
+		position: relative;
+		left: 10px;
+	}
+	.featured_work {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.first-image {
+		width: 30%;
+	}
+	.second-image {
+		width: 30%;
+	}
+	.third-image {
+		width: 30%;
+	}
+	.buffer {
+		width: 2.3%;
+	}
+	.project_name {
+		font-size: 1em;
+	}
+	.project_url {
+		font-size: 0.57em;
+	}
+}
+/* Responsive when the browser window is 'x' pixel or more */
+
+@media screen and (min-width: 1000px) {
+	body {
+		width: 950px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.project_url {
+		font-size: 0.9em;
+	}
+	.title {
+		font-size: 2.0em;
+		letter-spacing: 2px;
+		color: #ff0011
+	}
+	img {
+		border-radius: 10px;
+	}
+}
